@@ -10,7 +10,7 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+	position: relative;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -106,9 +106,9 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
   background-color: #3397DB;
   align-items: center;
+
 }
 .filter-options h2 {
   color: white;
@@ -136,6 +136,9 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -205,7 +208,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 45%;
 }
 #restaurant-name {
   color: #f18200;
@@ -236,6 +239,7 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -244,6 +248,7 @@ nav h1 a {
 }
 #reviews-container {
   padding: 30px 40px 80px;
+
 }
 #reviews-container h2 {
   color: #f58500;
@@ -254,22 +259,57 @@ nav h1 a {
 }
 #reviews-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
+
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 80%;
+  justify-content: center;
+ margin: 0 0 30px;
 }
 #reviews-list li p {
   margin: 0 0 10px;
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media (max-width: 770px) {
+
+  .inside #map-container {
+  	height: 400px;
+  	position: relative;
+  	width: 100%;
+  }
+
+  .inside #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
+
+  #breadcrumb {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .inside #footer {
+    width: 100%;
+  }
+
+  .leaflet-control-zoom.leaflet-bar.leaflet-control {
+    margin-top: 4rem;
+  }
 }

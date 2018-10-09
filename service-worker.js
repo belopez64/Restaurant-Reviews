@@ -1,4 +1,4 @@
-/*const cacheFiles = [
+const cacheFiles = [
     '/',
     '/index.html',
     '/restaurant.html',
